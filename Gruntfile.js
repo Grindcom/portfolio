@@ -6,8 +6,16 @@ module.exports = function(grunt) {
         options: {
           engine: 'im',
           sizes: [{
+            width: 480,
+            suffix: '_med_1x',
+            quality: 25
+          },{
             width: 800,
             suffix: '_large_1x',
+            quality: 35
+          },{
+            width: 1600,
+            suffix: '_large_2x',
             quality: 50
           }]
         },
@@ -19,9 +27,16 @@ module.exports = function(grunt) {
         }]
       }
     },
+    /* Clear out the images directory if it exists */
+    clean: {
+      dev: {
+        src: ['images'],
+      },
+    },
   });
 
   grunt.loadNpmTasks('grunt-responsive-images');
-  grunt.registerTask('default', ['responsive_images']);
+    grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.registerTask('default', ['clean','responsive_images']);
 
 };
