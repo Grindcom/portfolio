@@ -39,6 +39,7 @@ a{
   max-width: 950px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 50px 50px 50px 40px #7d97ad;
 }
 .row{
   margin-left: auto;
@@ -54,6 +55,7 @@ a{
   /*float: right;*/
   text-align: center;
   /*margin-right: -4px;*/
+  box-shadow:3px 3px 50px #7d97ad;
 }
 .social-stuff{
   float: right;
