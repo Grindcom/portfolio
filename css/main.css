@@ -1,0 +1,147 @@
+/*This is the main style sheet for the UDacity Front-End Developer portfolio project*/
+*{
+  /*default box sizing*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+[class*="zocial-"]:before {
+  color: black;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+  margin: 25px;
+  padding: 20px;
+  font-size: 2em;
+}
+div{
+
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 1s;
+  transition-timing-function: ease-in-out;
+}
+body{
+  font-family: 'Dosis', sans-serif;
+  color: #2d3c49;
+  font-weight: 300;
+}
+hr{
+  color: #7d97ad;
+  width: auto;
+  height: 10px;
+}
+a{
+  color: #02b3e4;
+}
+.container-flow{
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row{
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-box{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-centered{
+  display: inline-block;
+  /*float: right;*/
+  text-align: center;
+  /*margin-right: -4px;*/
+}
+.social-stuff{
+  float: right;
+}
+
+/*Rules*/
+.text-muted{
+  color: #2d3c49;
+  /*make bold*/
+  font-weight: bold;
+  /*shodow effect*/
+  text-shadow: 5px 5px 10px #7d97ad;
+}
+.text-thin{
+  font-weight: 100;
+}
+
+.title-logo{
+  max-width: 125px;
+  border-radius: 5px 25px 5px 25px;
+  margin-top: 20px;
+  box-shadow: 5px 5px 20px  #02b3e4 inset;
+}
+.col-xs-4{
+  /*This forces the row to drop to less columns
+  when it reaches the minimum width*/
+  min-width: 230px;
+}
+.img-responsive{
+  width: 100%;
+}
+/*Queries that override default settings (these have to be
+after the default or they won't work properly)*/
+@media screen and (min-width: 751px) {
+  /*Over 751px*/
+  .title-super{
+    font-size: 60px
+  }
+  .title-sub{
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 361px) and (max-width: 750px) {
+  /*From 451px to 750px*/
+  .title-super{
+    font-size: 40px;
+  }
+  .title-sub{
+    font-size: 1.5em;
+  }
+
+
+}
+@media screen and (max-width: 476px) {
+  .col-centered{
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text-muted{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  /*Below 510px*/
+  .title-super{
+    font-size: 30px;
+  }
+  .title-sub{
+    font-size: 1em;
+  }
+  .text-header{
+    width: 70%;
+
+  }
+  .logo-box{
+    width: 30%;
+  }
+  .col-centered{
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 250px) {
+  .title-logo{
+    display: none;
+  }
+}
