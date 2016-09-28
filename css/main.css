@@ -5,7 +5,6 @@
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-
 }
 [class*="zocial-"]:before {
   color: black;
@@ -17,7 +16,6 @@
   font-size: 2em;
 }
 div{
-
   -webkit-transition: width 2s; /* Safari */
   transition: width 1s;
   transition-timing-function: ease-in-out;
@@ -63,8 +61,6 @@ a{
 .social-stuff{
   float: right;
 }
-
-/*Rules*/
 .text-muted{
   color: #2d3c49;
   /*make bold*/
@@ -75,7 +71,6 @@ a{
 .text-thin{
   font-weight: 100;
 }
-
 .title-logo{
   max-width: 125px;
   border-radius: 5px 25px 5px 25px;
@@ -109,8 +104,6 @@ after the default or they won't work properly)*/
   .title-sub{
     font-size: 1.5em;
   }
-
-
 }
 @media screen and (max-width: 476px) {
   .col-centered{
@@ -133,7 +126,6 @@ after the default or they won't work properly)*/
   }
   .text-header{
     width: 70%;
-
   }
   .logo-box{
     width: 30%;
