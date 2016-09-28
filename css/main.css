@@ -27,6 +27,9 @@ body{
   color: #2d3c49;
   font-weight: 300;
 }
+article{
+  text-align: center;
+}
 hr{
   color: #7d97ad;
   width: auto;
