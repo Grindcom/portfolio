@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
   <meta name="mobile-web-app-capable" content="yes">
 
   <!-- css links go here -->
@@ -67,11 +67,12 @@
           <!-- Featured work Box 1 -->
           <picture>
             <source media="(max-width: 480px)" srcset="./images/PuppiesOn_theRun-400x150_sm_1x.jpg" />
-            <source "(min-width: 481px)" srcset="./images/PuppiesOn_theRun-800x350_large_1x.jpg" />
+            <source media="(min-width: 481px)" srcset="./images/PuppiesOn_theRun-800x350_large_1x.jpg" />
             <img class="img-responsive" src="http://placehold.it/300x150" data-toggle="modal" data-target="#project1" alt="Puppies running through snow, photo by Greg Ford">
           </picture>
+          <article>
           <h3>Project 1</h3>
-          <article>This is a link to all code and images for Project 1 of the UDacity Front-End Developer course, which is this prortfolio site.<br><a href="https://github.com/Grindcom/udacity-front-end-dev-project1">(Project 1 Repository)</a><br />
+          This is a link to all code and images for Project 1 of the UDacity Front-End Developer course, which is this prortfolio site.<br><a href="https://github.com/Grindcom/udacity-front-end-dev-project1">(Project 1 Repository)</a><br />
           </article>
         </div>
         <!-- Featured work Box 2 -->
@@ -81,8 +82,9 @@
             <source media="(min-width: 481px)" srcset="./images/jetdisplaykamloops-800x350_large_1x.jpg" />
             <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" alt="Canadian Forces Jet on display at the Kamloops Regional Airport, photo by Greg Ford">
           </picture>
+          <article>
           <h3>Responsive Example</h3>
-          <article>Here is a stripped down example of what a responsive site can do.<br><a href="https://github.com/Grindcom/udacity-flexwrap_nest">(Responsive example repository)</a><br />
+          Here is a stripped down example of what a responsive site can do.<br><a href="https://github.com/Grindcom/udacity-flexwrap_nest">(Responsive example repository)</a><br />
           </article>
         </div>
         <!-- </div>
@@ -94,20 +96,21 @@
             <source media="(min-width: 481px)" srcset="./images/harley-davidson-number-1-800x350_large_1x.jpg" />
             <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" alt="Harley-Davidson #1 at the Harley Davidson museum, photo by Greg Ford">
           </picture>
-
-          <h3>Other Code</h3>
-          <article>I have been coding since 1997 in languages like C/C++, C#, Java as well as designing SQL databases.  Here is a link to some examples of that code.<br><a href="https://github.com/Grindcom/code-portfolio">(non-scripting code repository)</a><br />
+          <article>
+            <h3>Other Code</h3>
+            I have been coding since 1997 in languages like C/C++, C#, Java as well as designing SQL databases.  Here is a link to some examples of that code.<br><a href="https://github.com/Grindcom/code-portfolio">(non-scripting code repository)</a><br />
           </article>
         </div>
         <div class="col-xs-4 col-sm-4 col-centered">
           <!-- Featured work box 4 -->
           <picture>
             <source media="(max-width: 480px)" srcset="./images/IMG_20140721_124745-400x150_sm_1x.jpg" />
-            <source "(min-width: 481px)" srcset="./images/IMG_20140721_124745-800x350_large_1x.jpg" />
+            <source media="(min-width: 481px)" srcset="./images/IMG_20140721_124745-800x350_large_1x.jpg" />
             <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" alt="Water flows into large tunnel, Photo by Greg Ford">
           </picture>
-          <h3>More to Come</h3>
-          <article><br><a href="https://github.com/Grindcom">Link to Git Repository</a><br />
+          <article>
+            <h3>More to Come</h3>
+            <br><a href="https://github.com/Grindcom">Link to Git Repository</a><br />
           </article>
         </div>
       </div>
@@ -119,10 +122,10 @@
     </main>
     <footer>
       <!-- Add social media links here -->
-      <section class="social-stuff">
+      <div class="social-stuff">
         <a class="zocial-facebook" href="https://www.facebook.com/greg.ford.9256"></a>
         <a class="zocial-linkedin" href="https://ca.linkedin.com/in/gtford"></a>
-      </section>
+      </div>
     </footer>
   </div>
   <!-- Modal -->
@@ -133,7 +136,7 @@
           <h4 class="modal-title" id="myModalLabel">Just a cute picture...</h4>
         </div>
         <div class="modal-body">
-          <img class="img-responsive" src="./images/PuppiesOn_theRun-1600_large_2x.jpg">
+          <img class="img-responsive" src="./images/PuppiesOn_theRun-1600_large_2x.jpg" alt="6 week old puppies running through powder snow, Photo by Greg Ford.">
           A winter batch of puppies fostered for our local SPCA.
         </div>
         <div class="modal-footer">
