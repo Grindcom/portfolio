@@ -39,10 +39,24 @@ module.exports = function(grunt) {
         src: ['images'],
       },
     },
+    /* Copy the "fixed" images that don't go through processing into the images/directory */
+    copy: {
+      dev: {
+        files: [{
+          expand: true,
+          src: ['*.svg'],
+          // Set source reletive to the following directory
+          cwd: 'images_src/',
+          dest: 'images/',
+          filter: 'isFile'
+        }]
+      },
+    },
   });
 
   grunt.loadNpmTasks('grunt-responsive-images');
-    grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.registerTask('default', ['clean','responsive_images']);
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.registerTask('default', ['clean', 'copy','responsive_images']);
 
 };
